@@ -1,0 +1,40 @@
+.heroTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  >tbody {
+    >td {
+      padding: 10px;
+    }
+    >tr {
+      border-bottom: #374151 1px solid;
+      display: flex;
+      >td:nth-child(1) {
+        color: #ce6100;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-right: 10px;
+      }
+      >td:nth-child(2) {
+        flex: 1;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        text-align: right;
+      }
+    }
+    >tr:nth-child(even) {
+      background-color: #374151;
+    }
+    
+    >tr:hover {
+      background-color: #ce6100;
+      color: #fff;
+      
+      >td:nth-child(1) {
+        color: #000;
+
+      }
+    }
+  }
+}
